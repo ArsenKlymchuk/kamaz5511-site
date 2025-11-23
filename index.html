@@ -1,60 +1,106 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="utf-8">
     <title>Strona o Kamazie 5511</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <style>
-        body {
-            background-color: #f0f8ff;
-            font-family: Arial, sans-serif;
-            color: #222;
-            text-align: center;
-            margin: 0;
-            padding: 20px;
+        body{
+            margin:0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(180deg,#f2f6fb,#e9eef8);
+            color:#1e293b;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            padding:30px;
         }
-        h1 {
-            background-color: #004aad;
-            color: white;
-            padding: 15px;
-            border-radius: 12px;
+        .card{
+            width:100%;
+            max-width:980px;
+            background:#fff;
+            border-radius:14px;
+            box-shadow:0 12px 40px rgba(2,6,23,0.08);
+            overflow:hidden;
         }
-        p {
-            font-size: 18px;
-            margin: 20px auto;
-            width: 80%;
-            line-height: 1.6;
+        .hero{
+            display:flex;
+            gap:20px;
+            align-items:center;
+            padding:28px;
         }
-        img {
-            width: 60%;
-            max-width: 600px;
-            border-radius: 20px;
-            margin: 20px 0;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        .hero .left{
+            flex:1;
         }
-        button {
-            background-color: #0078ff;
-            color: white;
-            font-size: 18px;
-            padding: 10px 25px;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: 0.3s;
+        .hero h1{
+            margin:0 0 8px;
+            font-size:32px;
+            color:#073b7a;
         }
-        button:hover {
-            background-color: #005fcc;
+        .hero p{
+            margin:0 0 12px;
+            line-height:1.6;
+            color:#334155;
+        }
+        .hero img{
+            width:360px;
+            max-width:40%;
+            border-radius:12px;
+            box-shadow:0 8px 26px rgba(2,6,23,0.12);
+            object-fit:cover;
+        }
+        .actions{
+            padding:20px 28px 32px;
+            display:flex;
+            gap:12px;
+        }
+        .btn{
+            background:#0b5ed7;
+            color:#fff;
+            border:0;
+            padding:10px 16px;
+            border-radius:10px;
+            cursor:pointer;
+            font-weight:600;
+            box-shadow:0 8px 20px rgba(11,94,215,0.12);
+        }
+        .btn.secondary{
+            background:#f3f4f6;
+            color:#0f172a;
+            box-shadow:none;
+            border:1px solid #e6eefc;
+        }
+        footer{
+            padding:14px 28px;
+            font-size:13px;
+            color:#667085;
+            background:#fbfdff;
+        }
+        @media (max-width:860px){
+            .hero{flex-direction:column; text-align:center}
+            .hero img{max-width:80%; width:300px}
         }
     </style>
 </head>
 <body>
-    <h1>Witamy na stronie o Kamazie 5511!</h1>
-    <p>KamAZ-5511 to klasyczna, trzyosiowa ciężarówka produkowana przez zakład KamAZ w ZSRR.
-    Model ten zdobył popularność dzięki swojej wytrzymałości i prostocie.</p>
+    <div class="card">
+        <div class="hero">
+            <div class="left">
+                <h1>Witamy na stronie o Kamazie 5511</h1>
+                <p>KamAZ-5511 to klasyczna, trzyosiowa ciężarówka produkowana w ZSRR. Model znany z prostoty i wytrzymałości — poniżej znajdziesz krótki opis i odnośnik do historii.</p>
+                <p><strong>Podstawowe info:</strong> ładowność ~7–10 ton, silnik Diesel V8, trwała rama, szerokie zastosowanie w rolnictwie i budownictwie.</p>
+            </div>
 
-    <!-- Твоя картинка -->
-    <img src="KAMAZ 5511.png" alt="Kamaz 5511">
+            <!-- Используется локальный путь к загруженному изображению -->
+            <img src="/mnt/data/KAMAZ 5511.png" alt="Kamaz 5511">
+        </div>
 
-    <p>Chcesz poznać historię Kamaza 5511?</p>
-    <button onclick="window.location.href='historia.html'">Historia Kamaza</button>
+        <div class="actions">
+            <button class="btn" onclick="window.location.href='historia.html'">Historia Kamaza</button>
+            <button class="btn secondary" onclick="alert('Kontakt / dodatkowe informacje')">Kontakt / Pobierz</button>
+        </div>
+
+        <footer>Strona demonstracyjna • © 2025</footer>
+    </div>
 </body>
 </html>
