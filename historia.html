@@ -2,83 +2,77 @@
 <html lang="pl">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Historia Kamaza 5510</title>
+    <title>Historia Kamaza 5511</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <style>
-        body {
-            font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
-            margin: 0;
-            background: #f7f9fc;
-            color: #111;
-            padding: 30px;
+        body{
+            margin:0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(180deg,#fff9f0,#fff4e6);
+            color:#1f2937;
+            padding:28px;
+            display:flex;
+            justify-content:center;
         }
-        .wrap {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            padding: 26px;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(10, 20, 40, 0.06);
+        .wrap{
+            width:100%;
+            max-width:900px;
+            background:#fff;
+            border-radius:12px;
+            box-shadow:0 14px 36px rgba(3,10,30,0.06);
+            overflow:hidden;
         }
-        h1 {
-            margin-top: 0;
+        .top{
+            padding:20px 28px;
+            border-bottom:1px solid #f1f5f9;
         }
-        p {
-            line-height: 1.65;
-            color: #333;
-            margin-bottom: 14px;
+        .top h1{margin:0;color:#b45309}
+        .content{
+            display:flex;
+            gap:20px;
+            padding:22px 28px;
+            align-items:flex-start;
         }
-        .back {
-            display: inline-block;
-            margin-top: 8px;
-            padding: 10px 14px;
-            border-radius: 8px;
-            background: #0b5ed7;
-            color: white;
-            text-decoration: none;
+        .content .txt{flex:1}
+        .content p{margin:0 0 12px;line-height:1.7;color:#334155}
+        .content img{
+            width:300px;
+            border-radius:10px;
+            object-fit:cover;
+            box-shadow:0 8px 20px rgba(0,0,0,0.08);
         }
-        .hero {
-            display: flex;
-            gap: 18px;
-            align-items: flex-start;
+        .back{
+            display:inline-block;
+            margin:18px 28px;
+            padding:10px 14px;
+            border-radius:8px;
+            background:#0b5ed7;
+            color:white;
+            text-decoration:none;
         }
-        .hero img {
-            width: 260px;
-            height: auto;
-            border-radius: 10px;
-        }
-        @media (max-width: 720px) {
-            .hero {
-                flex-direction: column;
-            }
-            .hero img {
-                width: 100%;
-            }
+        @media (max-width:760px){
+            .content{flex-direction:column; text-align:center}
+            .content img{width:80%; margin:0 auto}
         }
     </style>
 </head>
 <body>
     <div class="wrap">
-        <a class="back" href="index.html">← Powrót</a>
-        <h1>Historia Kamaza 5510</h1>
-
-        <div class="hero">
-            <div>
-                <p><strong>KamAZ-5510</strong> to model, który zyskał popularność dzięki swojej niezawodności i prostocie. Wiele egzemplarzy służyło w rolnictwie i budownictwie — tam, gdzie potrzebny był prosty i łatwy w naprawie pojazd.</p>
-                <p>Typowe cechy: napęd na tylną oś, solidna rama, silnik wysokoprężny i pakiet wersji użytkowych dostosowanych do różnych zastosowań.</p>
-                <p>Na tej stronie prezentujemy krótką, ogólną historię. Jeśli chcesz dodać więcej szczegółów — mogę pomóc napisać dłuższy artykuł lub dodać sekcję z datami i faktami technicznymi.</p>
-            </div>
-            <img src="kamaz.jpg" alt="Kamaz 5510">
+        <div class="top">
+            <a class="back" href="index.html">← Powrót</a>
+            <h1>Historia Kamaza 5511</h1>
         </div>
 
-        <h2>Kilka faktów</h2>
-        <p>- Model znany z prostoty obsługi i napraw.</p>
-        <p>- Wykorzystywany w trudnych warunkach terenowych.</p>
-        <p>- W zależności od wersji mógł przenosić różne ładunki użytkowe.</p>
+        <div class="content">
+            <div class="txt">
+                <p><strong>KAMAZ-5511</strong> został wyprodukowany po raz pierwszy w latach 70-tych w Związku Radzieckim. Był to model przeznaczony do pracy ciężkiej — transport materiałów budowlanych i ładunków na krótkich dystansach.</p>
+                <p>Charakteryzował się prostą konstrukcją, łatwością napraw i dużą wytrzymałością w trudnych warunkach terenowych. Silnik Diesla V8 o pojemności ~10.85L dawał zadowalającą moc do pracy z ładunkiem.</p>
+                <p>Do dziś wiele egzemplarzy spotyka się na dalekiej prowincji i na placach budów — to dowód trwałości konstrukcji.</p>
+            </div>
 
-        <p style="margin-top:18px;color:#6b7280;font-size:13px">
-            Plik ze zdjęciem (kamaz.jpg) powinien znajdować się w tej samej lokacji co pliki HTML.
-        </p>
+            <!-- тот же локальный путь к изображению -->
+            <img src="/mnt/data/KAMAZ 5511.png" alt="Kamaz 5511">
+        </div>
     </div>
 </body>
 </html>
