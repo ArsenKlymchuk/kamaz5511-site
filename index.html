@@ -1,98 +1,98 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <img src="KAMAZ 5511.png">
     <meta charset="utf-8">
-    <title>Strona o Kamazie 5511</title>
+    <title>Kamaz 5511 – Strona Główna</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body{
             margin:0;
+            background:#c8f7c5; /* zielone boki */
             font-family: Arial, sans-serif;
-            background:#c8f7c5; /* ЗЕЛЁНЫЙ фон по бокам */
             display:flex;
             justify-content:center;
-            padding:30px;
+            padding:40px;
         }
         .card{
             width:100%;
-            max-width:980px;
+            max-width:900px;
             background:white;
-            border-radius:14px;
-            box-shadow:0 12px 40px rgba(0,0,0,0.1);
-            overflow:hidden;
+            border-radius:16px;
+            box-shadow:0 12px 40px rgba(0,0,0,0.12);
+            padding:30px;
         }
-        .hero{
-            display:flex;
-            gap:20px;
-            align-items:center;
-            padding:28px;
-        }
-        .hero .left{ flex:1; }
-        .hero h1{
-            margin:0 0 8px;
-            font-size:32px;
-            color:#0d4a0d;
-        }
-        .hero p{
+        h1{
             margin:0 0 12px;
+            color:#0d4a0d;
+            font-size:34px;
+            text-align:center;
+        }
+        p{
+            color:#333;
             line-height:1.6;
-            color:#2b2b2b;
+            text-align:center;
+            margin-bottom:16px;
         }
-        .hero img{
-            width:350px;
-            border-radius:12px;
-            object-fit:cover;
-        }
-        .actions{
-            padding:20px 28px 32px;
+        .image-box{
             display:flex;
-            gap:12px;
+            justify-content:center;
+            margin:25px 0;
+        }
+        .image-box img{
+            max-width:380px;
+            width:100%;
+            border-radius:12px;
+            box-shadow:0 8px 26px rgba(0,0,0,0.15);
+        }
+        .btn-box{
+            display:flex;
+            justify-content:center;
+            margin-top:25px;
         }
         .btn{
             background:#198754;
+            padding:12px 24px;
+            font-size:18px;
             color:white;
             border:0;
-            padding:10px 16px;
-            border-radius:10px;
+            border-radius:12px;
             cursor:pointer;
-            font-weight:600;
+            box-shadow:0 8px 20px rgba(25,135,84,0.25);
+            transition:0.2s;
         }
-        .btn.secondary{
-            background:#e6e6e6;
-            color:#1a1a1a;
+        .btn:hover{
+            background:#146c43;
         }
         footer{
-            padding:14px 28px;
-            background:#f1f1f1;
-            font-size:13px;
+            margin-top:25px;
+            text-align:center;
+            font-size:14px;
             color:#555;
-        }
-        @media(max-width:860px){
-            .hero{ flex-direction:column; text-align:center; }
-            .hero img{ width:80%; }
         }
     </style>
 </head>
 <body>
-    <div class="card">
-        <div class="hero">
-            <div class="left">
-                <h1>Witamy na stronie o Kamazie 5511</h1>
-                <p>Klasyczna ciężarówka z ZSRR — mocna, prosta i niezawodna.</p>
-                <p><strong>Info:</strong> ładowność 7–10 ton, silnik Diesel V8.</p>
-            </div>
 
-            <!-- ВАЖНО: файл должен лежать в репозитории -->
+    <div class="card">
+
+        <h1>Witamy na stronie o Kamazie 5511</h1>
+        <p>KamAZ-5511 — klasyczna ciężarówka z ZSRR. Mocna, niezawodna i używana do dziś.</p>
+
+        <div class="image-box">
             <img src="KAMAZ 5511.png" alt="Kamaz 5511">
         </div>
 
-        <div class="actions">
-            <button class="btn" onclick="location.href='historia.html'">Historia Kamaza</button>
-            <button class="btn secondary" onclick="alert('Kontakt / Informacje')">Kontakt</button>
+        <p><strong>Podstawowe informacje:</strong><br>
+        Ładowność 7–10 t • Silnik Diesel V8 • Solidna rama • Praca w budownictwie i rolnictwie</p>
+
+        <div class="btn-box">
+            <button class="btn" onclick="location.href='historia.html'">
+                Historia Kamaza
+            </button>
         </div>
 
         <footer>Strona demonstracyjna • © 2025</footer>
     </div>
+
 </body>
 </html>
