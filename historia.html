@@ -7,9 +7,8 @@
     <style>
         body{
             margin:0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: linear-gradient(180deg,#fff9f0,#fff4e6);
-            color:#1f2937;
+            font-family: Arial, sans-serif;
+            background:#c8f7c5; /* зелёный фон */
             padding:28px;
             display:flex;
             justify-content:center;
@@ -17,42 +16,32 @@
         .wrap{
             width:100%;
             max-width:900px;
-            background:#fff;
+            background:white;
             border-radius:12px;
-            box-shadow:0 14px 36px rgba(3,10,30,0.06);
+            box-shadow:0 14px 36px rgba(0,0,0,0.1);
             overflow:hidden;
         }
         .top{
             padding:20px 28px;
-            border-bottom:1px solid #f1f5f9;
+            border-bottom:1px solid #eee;
         }
-        .top h1{margin:0;color:#b45309}
-        .content{
-            display:flex;
-            gap:20px;
-            padding:22px 28px;
-            align-items:flex-start;
-        }
-        .content .txt{flex:1}
-        .content p{margin:0 0 12px;line-height:1.7;color:#334155}
-        .content img{
-            width:300px;
-            border-radius:10px;
-            object-fit:cover;
-            box-shadow:0 8px 20px rgba(0,0,0,0.08);
-        }
+        .top h1{ margin:0; color:#0d4a0d; }
         .back{
             display:inline-block;
-            margin:18px 28px;
-            padding:10px 14px;
-            border-radius:8px;
-            background:#0b5ed7;
+            margin-bottom:10px;
+            padding:8px 12px;
+            background:#198754;
             color:white;
             text-decoration:none;
+            border-radius:8px;
         }
-        @media (max-width:760px){
-            .content{flex-direction:column; text-align:center}
-            .content img{width:80%; margin:0 auto}
+        .content{
+            padding:22px 28px;
+        }
+        .content p{
+            margin:0 0 12px;
+            line-height:1.7;
+            color:#333;
         }
     </style>
 </head>
@@ -64,14 +53,9 @@
         </div>
 
         <div class="content">
-            <div class="txt">
-                <p><strong>KAMAZ-5511</strong> został wyprodukowany po raz pierwszy w latach 70-tych w Związku Radzieckim. Był to model przeznaczony do pracy ciężkiej — transport materiałów budowlanych i ładunków na krótkich dystansach.</p>
-                <p>Charakteryzował się prostą konstrukcją, łatwością napraw i dużą wytrzymałością w trudnych warunkach terenowych. Silnik Diesla V8 o pojemności ~10.85L dawał zadowalającą moc do pracy z ładunkiem.</p>
-                <p>Do dziś wiele egzemplarzy spotyka się na dalekiej prowincji i na placach budów — to dowód trwałości konstrukcji.</p>
-            </div>
-
-            <!-- тот же локальный путь к изображению -->
-            <img src="/mnt/data/KAMAZ 5511.png" alt="Kamaz 5511">
+            <p><strong>KAMAZ-5511</strong> powstał w latach 70-tych jako ciężarówka do pracy w trudnych warunkach.</p>
+            <p>Silnik Diesel V8 o pojemności 10.85L zapewniał dobrą moc do transportu ciężkich materiałów.</p>
+            <p>Dzięki prostej konstrukcji i niezawodności wiele egzemplarzy pracuje do dziś.</p>
         </div>
     </div>
 </body>
